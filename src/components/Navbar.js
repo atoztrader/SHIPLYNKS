@@ -25,9 +25,8 @@ export default function Navbar() {
           <img
             src={LOGO_URL}
             alt="Shiplynks Logo"
-            className="h-10 w-10 object-contain"
+            className="h-12 w-auto object-contain"
           />
-          <span className="text-xl font-bold tracking-tight">Shiplynks</span>
         </Link>
 
         {/* Desktop Nav Links */}
@@ -53,7 +52,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/register"
-            className="text-sm font-semibold bg-[#e67e22] hover:bg-[#d35400] text-white px-4 py-1.5 rounded transition"
+            className="text-sm font-semibold border border-white text-white hover:bg-white hover:text-[#1a3c5e] px-4 py-1.5 rounded transition"
           >
             Sign Up
           </Link>
