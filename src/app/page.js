@@ -50,24 +50,30 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#1a3c5e] via-[#1e4d78] to-[#2a6496] text-white py-24 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-[#e67e22] font-semibold text-sm uppercase tracking-widest mb-3">
+      <section className="relative text-white py-28 px-4" style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1586596010566-10bddf181d9c?w=1600&q=80')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black opacity-55"></div>
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <span className="inline-block bg-black bg-opacity-40 text-white text-sm font-medium px-4 py-1.5 rounded mb-5">
             Taking India to the World
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-5">
+          </span>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-5 max-w-2xl">
             Global Express Logistics & Shipping
           </h1>
-          <p className="text-gray-200 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-gray-200 text-lg max-w-xl mb-8">
             Shiplynks delivers your packages worldwide with care, speed, and
             precision. International shipping made simple.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap gap-4">
             <Link
               href="/tracking"
               className="bg-[#e67e22] hover:bg-[#d35400] text-white font-semibold px-6 py-3 rounded-lg transition shadow-lg"
             >
-              Track Your Shipment
+              Track Your Shipment →
             </Link>
             <Link
               href="/contact"
